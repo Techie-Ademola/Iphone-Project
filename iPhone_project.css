@@ -1,0 +1,599 @@
+body {
+    background: #000019;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.overall_wrapper {
+    width: 350px;            
+}
+.wrapper-1 {
+    position: relative;
+    height: 600px;
+    width: 300px;
+    border-radius: 30px;
+    border: 2px solid #111;
+    background-color: #111;
+}
+.wrapper-2 {
+    position: absolute;
+    top: -4px;
+    left: -2px;
+    z-index: -1;
+    height: 615px;
+    width: 310px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, rgb(250, 244, 244), rgba(63, 62, 62, 0.356), rgb(250, 244, 244), rgba(63, 62, 62, 0.356), rgb(250, 244, 244), rgba(63, 62, 62, 0.356), rgb(250, 244, 244), rgba(63, 62, 62, 0.356), rgb(250, 244, 244));
+}
+.wrapper-3 {
+    position: absolute;
+    top: 1%;
+    left: 5px;
+    height: 585px;
+    width: 285px;
+    border-radius: 25px;
+    border: 2px solid #666;
+    background-color: #666;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    animation-duration: .3s;
+}
+.wrapper-4 {
+    position: absolute;
+    bottom: 8px;
+    left: 42%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid silver;
+    background-color: #666;
+    cursor: pointer;
+}
+.wrapper2-4 {
+    position: absolute;
+    bottom: 8px;
+    left: 42%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid silver;
+    background-color: #666;
+    cursor: pointer;
+    display: none;
+}
+.top_wrapper {
+    position: absolute;
+    top: 0px;
+    left: 22%;
+    height: 30px;
+    width: 150px;
+    border-radius: 0px 0px 25px 25px;
+    background-color: #111;
+}
+.wrapper-5 {
+    position: absolute;
+    top: 17px;
+    right: 45%;
+    height: 5px;
+    width: 50px;
+    border-radius: 5px;
+    border-top: 2px solid lightslategray;
+    border-left: 3px solid lightslategray;
+    background-color: lightslategray;
+}
+.wrapper2-5 {
+    position: absolute;
+    top: 11px;
+    right: 45%;
+    height: 5px;
+    width: 50px;
+    border-radius: 5px;
+    border-top: 2px solid lightslategray;
+    border-left: 3px solid lightslategray;
+    background-color: lightslategray;
+}
+.wrapper3-5 {
+    position: absolute;
+    top: 11px;
+    right: 45%;
+    height: 5px;
+    width: 50px;
+    border-radius: 5px;
+    border-top: 2px solid lightslategray;
+    border-left: 3px solid lightslategray;
+    background-color: lightslategray;
+}
+.wrapper-6 {
+    position: absolute;
+    top: 14px;
+    right: 36%;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    background-color: forestgreen;
+}
+.wrapper2-6 {
+    position: absolute;
+    top: 8px;
+    right: 35%;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    background-color: forestgreen;
+}
+.wrapper3-6 {
+    position: absolute;
+    top: 8px;
+    right: 35%;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    background-color: forestgreen;
+}
+.wrapper-7 {
+    position: absolute;
+    top: 8px;
+    right: 30%;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    background-color: white;
+}
+.wrapper-8 {
+    position: absolute;
+    top: 14%;
+    right: -10px;
+    width: 7px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #111;
+    border-top: 2px solid #111;
+    border-left: 3px solid #111;
+    background-color: silver;
+}
+.wrapper-9 {
+    position: absolute;
+    top: 21%;
+    right: -10px;
+    width: 7px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #111;
+    border-top: 2px solid #111;
+    border-left: 3px solid #111;
+    background-color: silver;
+}
+.wrapper-10 {
+    position: absolute;
+    top: 31%;
+    right: -10px;
+    width: 7px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    border-top: 2px solid #333;
+    border-left: 3px solid #333;
+    background-color: silver;
+    cursor: progress;
+}
+.wrapper2-10 {
+    position: absolute;
+    top: 31%;
+    right: -10px;
+    width: 7px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #111;
+    border-top: 2px solid #111;
+    border-left: 3px solid #111;
+    background-color: silver;
+    display: none;
+    cursor: progress;
+}
+.wrapper-11 {
+    position: absolute;
+    bottom:-12px;
+    left: 38%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: black;
+}
+.wrapper2-11 {
+    position: absolute;
+    bottom:-12px;
+    right: 36%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: black;
+}
+.wrapper-12 {
+    position: absolute;
+    bottom:-13px;
+    left: 30%;
+    height: 9px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-top: 5px solid #111;
+    border-left: 4px solid #111;
+    border-right: 4px solid #111;
+    border-bottom: 1px solid #111;
+    background-color: transparent;
+}
+.wrapper-13 {
+    position: absolute;
+    bottom: -14px;
+    left: 44%;
+    height: 10px;
+    width: 40px;
+    border-radius: 5px;
+    border-top: 6px solid #111;
+    border-left: 3px solid #111;
+    border-right: 3px solid #111;
+    border-bottom: 1px solid #111;
+    background-color: silver;
+}
+.wrapper-14 {
+    position: absolute;
+    bottom:-10px;
+    right: 12%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    border-bottom: 3px solid #111;
+    background-color: #333;
+}
+.wrapper-15 {
+    position: absolute;
+    bottom:-10px;
+    right: 15%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    border-bottom: 3px solid #111;
+    background-color: #333;
+}
+.wrapper-16 {
+    position: absolute;
+    bottom:-10px;
+    right: 18%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    border-bottom: 3px solid #111;
+    background-color: #333;
+}
+.wrapper-17 {
+    position: absolute;
+    bottom:-10px;
+    right: 21%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    border-bottom: 3px solid #111;
+    background-color: #333;
+}
+.wrapper-18 {
+    position: absolute;
+    bottom:-10px;
+    right: 24%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    border-bottom: 3px solid #111;
+    background-color: #333;
+}
+.wrapper-19 {
+    position: absolute;
+    bottom:-10px;
+    right: 27%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    border-bottom: 3px solid #111;
+    background-color: #333;
+}
+
+.wrapper2-14 {
+    position: absolute;
+    bottom:-10px;
+    left: 12%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    border-bottom: 3px solid #111;
+    background-color: #333;
+}
+.wrapper2-15 {
+    position: absolute;
+    bottom:-10px;
+    left: 15%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    border-bottom: 3px solid #111;
+    background-color: #333;
+}
+.wrapper2-16 {
+    position: absolute;
+    bottom:-10px;
+    left: 18%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    border-bottom: 3px solid #111;
+    background-color: #333;
+}
+.wrapper2-17 {
+    position: absolute;
+    bottom:-10px;
+    left: 21%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    border-bottom: 3px solid #111;
+    background-color: #333;
+}
+.wrapper2-18 {
+    position: absolute;
+    bottom:-10px;
+    left: 24%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    border-bottom: 3px solid #111;
+    background-color: #333;
+}
+.wrapper2-19 {
+    position: absolute;
+    bottom:-10px;
+    left: 27%;
+    height: 5px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    border-bottom: 3px solid #111;
+    background-color: #333;
+}
+
+.edits {
+    position: absolute;
+    top: 1%;
+    left: 5px;
+    height: 585px;
+    width: 285px;
+    border-radius: 25px;
+    background-image: url(./IMAGES/my\ iphone\ bg\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.edit-1 {
+    margin-top: 100%;
+    text-align: center;
+    font-size: 70px;
+    line-height: 70px;
+    color: white;
+}
+.myDemo-2 {
+    margin-top: 50px;
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.date_meridian {
+    font-size: 22px;
+    font-family:cursive;
+}
+.edit-2 {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+.edit-3 {
+    margin-top: 100px;
+    animation: dribble 2s 0s infinite alternate ease-in-out forwards;
+}
+.edit-3text {
+    line-height: 1px;
+    text-align: center;
+    font-size: 15px;
+    font-family: cursive;
+    color: white;
+}
+.home_button {
+    position: absolute;
+    bottom: 8px;
+    right: 32%;
+    height: 4px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+@keyframes dribble {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(20px);
+    }
+}
+
+.homes {
+    position: absolute;
+    top: 1%;
+    left: 5px;
+    height: 585px;
+    width: 285px;
+    border-radius: 25px;
+    border: 2px solid #111;
+    background-image: url(./IMAGES/my\ iphone\ bg\ 2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    animation-duration: .2s;
+    overflow-y: hidden;
+}
+.image_row {
+    position: absolute;
+    bottom: 10px;
+}
+.image_links {
+    width: 40px;
+    height: 45px;
+    border-radius: 10px;
+}
+.image_links:hover {
+    filter: grayscale(70%);
+}
+
+.bi {
+    color: whitesmoke;
+} 
+.thumbnail {
+    width: 45px;
+}
+.thumbnail p {
+    font-size: 11px;
+    color: white !important;
+    text-align: center;
+}
+.thumbnail img {
+    transition: .2s ease-in-out;
+}
+.thumbnail img:hover {
+    transform: translateY(-5px);
+    transition: .2s ease-in-out;
+    filter: brightness(0.5);
+}
+.my_logos {
+    border-radius: 10px !important;
+}
+.My_footer {
+    margin-top: 125px !important;
+    background-color: transparent;
+    border-radius: 25px;
+    
+}
+.My_footerbg {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 271px;
+    height: 75px;
+    margin-top: 125px !important;
+    background-color: #6394ab;
+    border-radius: 25px;
+    filter: opacity(0.7);
+}
+
+/*The Analog Clock */
+
+.clock {
+    width: 240px;
+    height: 240px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+}
+
+.clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 2.0rem;
+    color: white;
+}
+
+.clock .number1 {rotate: 30deg; }
+.clock .number2 {rotate: 60deg; }
+.clock .number3 {--rotation: 90deg; }
+.clock .number4 {--rotation: 120deg; }
+.clock .number5 {--rotation: 150deg; }
+.clock .number6 {--rotation: 180deg; }
+.clock .number7 {--rotation: 210deg; }
+.clock .number8 {--rotation: 240deg; }
+.clock .number9 {--rotation: 270deg; }
+.clock .number10 {--rotation: 300deg; }
+.clock .number11 {--rotation: 330deg; }
+
+.clock .hand {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #111;
+}
+.clock .hand.second {
+    width: 2px;
+    height: 40%;
+    background-color: whitesmoke;
+}
+
+.clock .hand.minute {
+    width: 3px;
+    height: 35%;
+    background-color: whitesmoke;
+}
+
+.clock .hand.hour {
+    width: 5px;
+    height: 25%;
+    background-color: whitesmoke;
+}

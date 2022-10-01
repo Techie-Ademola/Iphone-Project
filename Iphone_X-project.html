@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone Project (Hot)</title>
+    <link rel="stylesheet" href="iPhone_project.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&amp;family=Julius+Sans+One&amp;display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Rambla:300,400,700,900|Playfair+Display:400,400i,700,700i,900,900i&amp;display=swap');
+        
+        body {
+            background: #000019;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        
+        .overall_wrapper {
+            width: 350px;            
+        }
+        .wrapper-1 {
+            position: relative;
+            height: 600px;
+            width: 300px;
+            border-radius: 30px;
+            border: 2px solid #111;
+            background-color: #111;
+        }
+        .wrapper-2 {
+            position: absolute;
+            top: -4px;
+            left: -2px;
+            z-index: -1;
+            height: 615px;
+            width: 310px;
+            border-radius: 30px;
+            background-image: linear-gradient(to right, rgb(250, 244, 244), rgba(63, 62, 62, 0.356), rgb(250, 244, 244), rgba(63, 62, 62, 0.356), rgb(250, 244, 244), rgba(63, 62, 62, 0.356), rgb(250, 244, 244), rgba(63, 62, 62, 0.356), rgb(250, 244, 244));
+        }
+        .wrapper-3 {
+            position: absolute;
+            top: 1%;
+            left: 5px;
+            height: 585px;
+            width: 285px;
+            border-radius: 25px;
+            border: 2px solid #111;
+            background-color: #111;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+            animation-duration: .3s;
+        }
+        
+        .top_wrapper {
+            position: absolute;
+            top: 0px;
+            left: 22%;
+            height: 30px;
+            width: 150px;
+            border-radius: 0px 0px 25px 25px;
+            background-color: #111;
+        }
+        .wrapper-5 {
+            position: absolute;
+            top: 17px;
+            right: 45%;
+            height: 5px;
+            width: 50px;
+            border-radius: 5px;
+            border-top: 2px solid lightslategray;
+            border-left: 3px solid lightslategray;
+            background-color: lightslategray;
+        }
+        .wrapper2-5 {
+            position: absolute;
+            top: 11px;
+            right: 45%;
+            height: 5px;
+            width: 50px;
+            border-radius: 5px;
+            border-top: 2px solid lightslategray;
+            border-left: 3px solid lightslategray;
+            background-color: lightslategray;
+        }
+        .wrapper3-5 {
+            position: absolute;
+            top: 11px;
+            right: 45%;
+            height: 5px;
+            width: 50px;
+            border-radius: 5px;
+            border-top: 2px solid lightslategray;
+            border-left: 3px solid lightslategray;
+            background-color: lightslategray;
+        }
+        .wrapper-6 {
+            position: absolute;
+            top: 14px;
+            right: 36%;
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            border: 3px solid #333;
+            background-color: forestgreen;
+        }
+        .wrapper2-6 {
+            position: absolute;
+            top: 8px;
+            right: 35%;
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            border: 3px solid #333;
+            background-color: forestgreen;
+        }
+        .wrapper3-6 {
+            position: absolute;
+            top: 8px;
+            right: 35%;
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            border: 3px solid #333;
+            background-color: forestgreen;
+        }
+        
+        .wrapper-8 {
+            position: absolute;
+            top: 14%;
+            right: -10px;
+            width: 7px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid #111;
+            border-top: 2px solid #111;
+            border-left: 3px solid #111;
+            background-color: silver;
+        }
+        .wrapper-9 {
+            position: absolute;
+            top: 21%;
+            right: -10px;
+            width: 7px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid #111;
+            border-top: 2px solid #111;
+            border-left: 3px solid #111;
+            background-color: silver;
+        }
+        .wrapper-10 {
+            position: absolute;
+            top: 31%;
+            right: -10px;
+            width: 7px;
+            height: 45px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            border-top: 2px solid #333;
+            border-left: 3px solid #333;
+            background-color: silver;
+            cursor: progress;
+        }
+        .wrapper2-10 {
+            position: absolute;
+            top: 31%;
+            right: -10px;
+            width: 7px;
+            height: 45px;
+            border-radius: 5px;
+            border: 1px solid #111;
+            border-top: 2px solid #111;
+            border-left: 3px solid #111;
+            background-color: silver;
+            display: none;
+            cursor: progress;
+        }
+        .wrapper-11 {
+            position: absolute;
+            bottom:-12px;
+            left: 38%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid black;
+            border-bottom: 1px solid black;
+            background-color: black;
+        }
+        .wrapper2-11 {
+            position: absolute;
+            bottom:-12px;
+            right: 36%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid black;
+            border-bottom: 1px solid black;
+            background-color: black;
+        }
+        
+        .wrapper-13 {
+            position: absolute;
+            bottom: -14px;
+            left: 44%;
+            height: 10px;
+            width: 40px;
+            border-radius: 5px;
+            border-top: 6px solid #111;
+            border-left: 3px solid #111;
+            border-right: 3px solid #111;
+            border-bottom: 1px solid #111;
+            background-color: silver;
+        }
+        .wrapper-14 {
+            position: absolute;
+            bottom:-10px;
+            right: 12%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #111;
+            border-bottom: 3px solid #111;
+            background-color: #333;
+        }
+        .wrapper-15 {
+            position: absolute;
+            bottom:-10px;
+            right: 15%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #111;
+            border-bottom: 3px solid #111;
+            background-color: #333;
+        }
+        .wrapper-16 {
+            position: absolute;
+            bottom:-10px;
+            right: 18%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #111;
+            border-bottom: 3px solid #111;
+            background-color: #333;
+        }
+        .wrapper-17 {
+            position: absolute;
+            bottom:-10px;
+            right: 21%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #111;
+            border-bottom: 3px solid #111;
+            background-color: #333;
+        }
+        .wrapper-18 {
+            position: absolute;
+            bottom:-10px;
+            right: 24%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #111;
+            border-bottom: 3px solid #111;
+            background-color: #333;
+        }
+        .wrapper-19 {
+            position: absolute;
+            bottom:-10px;
+            right: 27%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #111;
+            border-bottom: 3px solid #111;
+            background-color: #333;
+        }
+
+        .wrapper2-14 {
+            position: absolute;
+            bottom:-10px;
+            left: 12%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #111;
+            border-bottom: 3px solid #111;
+            background-color: #333;
+        }
+        .wrapper2-15 {
+            position: absolute;
+            bottom:-10px;
+            left: 15%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #111;
+            border-bottom: 3px solid #111;
+            background-color: #333;
+        }
+        .wrapper2-16 {
+            position: absolute;
+            bottom:-10px;
+            left: 18%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #111;
+            border-bottom: 3px solid #111;
+            background-color: #333;
+        }
+        .wrapper2-17 {
+            position: absolute;
+            bottom:-10px;
+            left: 21%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #111;
+            border-bottom: 3px solid #111;
+            background-color: #333;
+        }
+        .wrapper2-18 {
+            position: absolute;
+            bottom:-10px;
+            left: 24%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #111;
+            border-bottom: 3px solid #111;
+            background-color: #333;
+        }
+        .wrapper2-19 {
+            position: absolute;
+            bottom:-10px;
+            left: 27%;
+            height: 5px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #111;
+            border-bottom: 3px solid #111;
+            background-color: #333;
+        }
+
+        .edits {
+            position: absolute;
+            top: 1%;
+            left: 5px;
+            height: 585px;
+            width: 285px;
+            border-radius: 25px;
+            background-image: url(./IMAGES/my\ iphone\ bg\ 1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: none;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+        .edit-1 {
+            margin-top: 100%;
+            text-align: center;
+            font-size: 70px;
+            line-height: 70px;
+            color: white;
+        }
+        
+        .edit-2 {
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Arial Narrow Bold', sans-serif;
+            color: white;
+        }
+        .edit-3 {
+            margin-top: 90px;
+            animation: dribble 2s 0s infinite alternate ease-in-out forwards;
+        }
+        .edit-3text {
+            line-height: 1px;
+            text-align: center;
+            font-size: 15px;
+            font-family: cursive;
+            color: white;
+        }
+        .home_button {
+            position: absolute;
+            bottom: 8px;
+            right: 32%;
+            height: 4px;
+            width: 100px;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .lights_div {
+            position: absolute;
+            left: 10px;
+            bottom: 20px;
+            width: fit-content;
+            /* border: 2px solid blue; */
+            background-color: #063685;
+            border-radius: 70px !important;
+        }
+        .torch {
+            width: 40px;
+            height: 40px;
+            border-radius: 70% !important;
+        }
+        .camera_div {
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            width: fit-content;
+            /* border: 2px solid blue; */
+            background-color: #063685;
+            border-radius: 70px !important;
+            padding: 8px;
+        }
+        .camera {
+            width: 30px;
+            height: 30px;
+            border-radius: 70px !important;
+        }
+
+        @keyframes dribble {
+            0% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(20px);
+            }
+        }
+
+        .homes {
+            position: absolute;
+            top: 1%;
+            left: 5px;
+            height: 585px;
+            width: 285px;
+            border-radius: 25px;
+            border: 2px solid #111;
+            background-image: url(./IMAGES/my\ iphone\ bg\ 2.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: none;
+            cursor: pointer;
+            transition: .1s ease-in-out;
+            animation-duration: .1s;
+            overflow-y: hidden;
+        }
+        
+        .bi {
+            color: whitesmoke;
+        } 
+        .thumbnail {
+            width: 45px;
+            animation-delay: .5s;
+            animation-duration: 2s;
+        }
+        .thumbnail p {
+            font-size: 11px;
+            color: white !important;
+            text-align: center;
+        }
+        .thumbnail img {
+            transition: .2s ease-in-out;
+        }
+        .thumbnail img:hover {
+            transform: translateY(-5px);
+            transition: .2s ease-in-out;
+            filter: brightness(0.5);
+        }
+        .my_logos {
+            border-radius: 10px !important;
+        }
+        .My_footer {
+            margin-top: 125px !important;
+            background-color: transparent;
+            border-radius: 25px;
+            
+        }
+        .My_footerbg {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            width: 271px;
+            height: 75px;
+            margin-top: 125px !important;
+            background-color: #6394ab;
+            border-radius: 25px;
+            filter: opacity(0.7);
+        }
+
+        /* Analog Clock Styles */
+
+        .clock {
+            width: 240px;
+            height: 240px;
+            background-color: transparent;
+            border-radius: 50%;
+            border: none;
+            position: absolute;
+            top: 15%;
+            left: 8%;
+        }
+
+        .clock .number {
+            --rotation: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transform: rotate(var(--rotation));
+            font-size: 2.0rem;
+            color: white;
+        }
+
+        .clock .number1 {rotate: 30deg; }
+        .clock .number2 {rotate: 60deg; }
+        .clock .number3 {--rotation: 90deg; }
+        .clock .number4 {--rotation: 120deg; }
+        .clock .number5 {--rotation: 150deg; }
+        .clock .number6 {--rotation: 180deg; }
+        .clock .number7 {--rotation: 210deg; }
+        .clock .number8 {--rotation: 240deg; }
+        .clock .number9 {--rotation: 270deg; }
+        .clock .number10 {--rotation: 300deg; }
+        .clock .number11 {--rotation: 330deg; }
+
+        .clock .hand {
+            --rotation: 0;
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            transform-origin: bottom;
+            z-index: 10;
+            transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+        }
+
+        .clock::after {
+            content: '';
+            position: absolute;
+            background-color: white;
+            z-index: 11;
+            width: 15px;
+            height: 15px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background-color: white;
+            border: 2px solid #111;
+        }
+        .clock .hand.second {
+            width: 2px;
+            height: 40%;
+            background-color: whitesmoke;
+        }
+
+        .clock .hand.minute {
+            width: 3px;
+            height: 35%;
+            background-color: whitesmoke;
+        }
+
+        .clock .hand.hour {
+            width: 5px;
+            height: 25%;
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="overall_wrapper">
+        <div class="wrapper-1">
+            <div class="wrapper-2"></div>
+            <div class="wrapper-3 animate__animated animate__fadeOut" id="close_Booting"></div>
+            <div class="wrapper-5"></div>
+            <div class="wrapper-6"></div>
+            <div class="wrapper-8"></div>
+            <div class="wrapper-9"></div>
+            <div class="wrapper-10" onclick="startBoot()"></div>
+            <div class="wrapper2-10" onclick="stopBoot()"></div>
+            <div class="wrapper-11"></div>
+            <div class="wrapper2-11"></div>
+            <div class="wrapper-13"></div>
+            <div class="wrapper-14"></div>
+            <div class="wrapper-15"></div>
+            <div class="wrapper-16"></div>
+            <div class="wrapper-17"></div>
+            <div class="wrapper-18"></div>
+            <div class="wrapper-19"></div>
+
+            <div class="wrapper2-14"></div>
+            <div class="wrapper2-15"></div>
+            <div class="wrapper2-16"></div>
+            <div class="wrapper2-17"></div>
+            <div class="wrapper2-18"></div>
+            <div class="wrapper2-19"></div>
+
+            <div class="edits animate__animated animate__fadeIn" id="open_Booting">
+                <div class="top_wrapper"></div>
+                <div class="wrapper2-5"></div>
+                <div class="wrapper2-6"></div>
+                <div class="container">
+                    <div class="row d-flex">
+                        <div class="mx-2 mr-auto">
+                            <i class="bi bi-wifi text-white ml-3" style="font-size: 20px;"></i>
+                        </div>
+                        <div class="mx-2">
+                            <span class="text-white"><span id="demo-2"></span > <span id="myAMPM">PM</span></span>
+                        </div>
+                        <div class="mx-2 ml-auto">
+                            <i class="bi bi-bar-chart-fill text-white p-0"></i>
+                            <span class="bi p-0" style="font-size: 14px;">4G</span>
+                            <i class="bi bi-battery-full text-white p-0" style="font-size: 20px;"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clock">
+                    <div class="hand hour" data-hour-hand></div>
+                    <div class="hand minute" data-minute-hand></div>
+                    <div class="hand second" data-second-hand></div>
+                    <div class="number number1"><i class="bi bi-dot"></i></div>
+                    <div class="number number2"><i class="bi bi-dot"></i></div>
+                    <div class="number number3"><i class="bi bi-dot"></i></div>
+                    <div class="number number4"><i class="bi bi-dot"></i></div>
+                    <div class="number number5"><i class="bi bi-dot"></i></div>
+                    <div class="number number6"><i class="bi bi-dot"></i></div>
+                    <div class="number number7"><i class="bi bi-dot"></i></div>
+                    <div class="number number8"><i class="bi bi-dot"></i></div>
+                    <div class="number number9"><i class="bi bi-dot"></i></div>
+                    <div class="number number10"><i class="bi bi-dot"></i></div>
+                    <div class="number number11"><i class="bi bi-dot"></i></div>
+                    <div class="number number12"><i class="bi bi-dot"></i></div>
+                </div>
+
+                <div class="edit-1"><span id="myDemo"></span> <sub class="date_meridian" id="myAMPM_2"><small></small></sub></div>
+                <div class="edit-2 px-3 mt-2" id="myDate"></div>
+                <div class="edit-3 text-center">
+                    <p class="edit-3text">Click to unlock</p>
+                    <a class="up-arrow" data-toggle="tooltip" onclick="openHome()" title="click or swipe to unlock">
+                        <i class="fa fa-angle-up py-2 text-secondary text-center font-weight-bolder" aria-hidden="true" style="font-size: 25px; line-height: 1px;"></i>
+                    </a>
+                </div>
+
+                <div class="lights_div" title="Flashlight">
+                    <img class="torch" src="./IMAGES/ios_flashlight.png" alt="">
+                </div>
+                <div class="camera_div" title="HD Camera">
+                    <img class="camera" src="./IMAGES/ios_camera-removebg-preview.png" alt="">
+                </div>
+                <div class="home_button" onclick="openHome()"></div>
+            </div>
+
+            <div class="homes animate__animated animate__zoomIn">
+                <div class="top_wrapper"></div>
+                <div class="wrapper3-5"></div>
+                <div class="wrapper3-6"></div>
+                <div class="container">
+                    <div class="row d-flex mt-1">
+                        <div class="mx-2 mr-auto">
+                            <span class="text-light" style="font-size: 12px;"><span id="demo"></span> <span id="myAMPM_3"> PM</span></span>
+                        </div>
+                        <div class="mx-2">
+
+                        </div>
+                        <div class="mx-2 ml-auto">
+                            <i class="bi bi-wifi" title="WIFI"></i>
+                            <i class="bi bi-bar-chart-fill" title="MTN NG"></i>
+                            <i class="bi bi-battery-full" title="Fully charged"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row d-flex px-1 mt-3" style="justify-content: space-around !important;">
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/messages logo.jpg" alt="Messages"></a>
+                            <p class="text-dark">Messages</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/calendar logo.png" alt="Calendar"></a>
+                            <p class="text-dark">Calendar</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/photo logo.jpg" alt="Photos"></a>
+                            <p class="text-dark">Photos</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/camera logo.jpg" alt="Camera"></a>
+                            <p class="text-dark">Camera</p>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex px-1" style="justify-content: space-around !important;">
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/weather logo.png" alt="Weather"></a>
+                            <p class="text-dark">Weather</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/clock logo.png" alt="Clock"></a>
+                            <p class="text-dark">Clock</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/maps logo.png" alt="Maps"></a>
+                            <p class="text-dark">Maps</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/videos logo.jpg" alt="Videos"></a>
+                            <p class="text-dark">Videos</p>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex px-1" style="justify-content: space-around !important;">
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/wallet logo.png" alt="Wallet"></a>
+                            <p class="text-dark">Wallet</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/notes logo.png" alt="Notes"></a>
+                            <p class="text-dark">Notes</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/reminder logo.png" alt="Reminder"></a>
+                            <p class="text-dark">Reminder</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/stocks logo.png" alt="Stocks"></a>
+                            <p class="text-dark">Stocks</p>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex px-1" style="justify-content: space-around !important;">
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/iTunes logo.png" alt="iTunes Store"></a>
+                            <p class="text-dark">iTunes Store</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/appstore logo.jpg" alt="App Store"></a>
+                            <p class="text-dark">App Store</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/iBooks logo.png" alt="iBooks"></a>
+                            <p class="text-dark">iBooks</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/news logo.png" alt="News"></a>
+                            <p class="text-dark">News</p>
+                        </div>
+                    </div>
+
+                    <div class="My_footerbg"></div>
+                    <div class="row d-flex px-1 mt-5 pt-3 My_footer" style="justify-content: space-around !important;">
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/phone logo.png" alt="Phone"></a>
+                            <p class="text-dark" style="color: white !important;">Phone</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/safari_logo.png" alt="Safari"></a>
+                            <p class="text-dark" style="color: white !important;">Safari</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/mail logo.png" alt="Mail"></a>
+                            <p class="text-dark" style="color: white !important;">Mail</p>
+                        </div>
+                        <div class="thumbnail animate__animated animate__fadeInUp">
+                            <a href=""><img class="img-fluid img-responsive my_logos" src="./IMAGES/music logo.webp" alt="Music"></a>
+                            <p class="text-dark" style="color: white !important;">Music</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <script>
+        setInterval(setClock, 1000)
+
+        const hourHand = document.querySelector('[data-hour-hand]')
+        const minuteHand = document.querySelector('[data-minute-hand]')
+        const secondHand = document.querySelector('[data-second-hand]')
+
+        function setClock() {
+            const currentDate = new Date()
+            const secondsRatio = currentDate.getSeconds() / 60
+            const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
+            const hoursRatio = (minutesRatio + currentDate.getHours()) / 12
+            setRotation(secondHand, secondsRatio)
+            setRotation(minuteHand, minutesRatio)
+            setRotation(hourHand, hoursRatio)
+        }
+
+        function setRotation(element, rotationRatio) {
+            element.style.setProperty('--rotation', rotationRatio * 360)
+        }
+        setClock()
+ 
+
+        function startBoot() {
+            document.getElementById('open_Booting').style.display = 'block';
+            document.querySelector('.wrapper-10').style.display = 'none';
+            document.getElementById('close_Booting').style.display = 'none';
+            document.querySelector('.wrapper2-10').style.display = 'block';
+            document.querySelector('.homes').style.display = 'none';
+
+            myTime()
+        }
+
+        function stopBoot() {
+            document.getElementById('open_Booting').style.display = 'none';
+            document.querySelector('.wrapper-10').style.display = 'block';
+            document.getElementById('close_Booting').style.display = 'block';
+            document.querySelector('.wrapper2-10').style.display = 'none';
+            document.querySelector('.homes').style.display = 'none';
+        
+            myTime() 
+        }
+
+
+        function openHome() {
+            document.getElementById('open_Booting').style.display = 'none';
+            document.querySelector('.homes').style.display = 'block';
+
+            myTime()            
+        }
+
+        const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        const d = new Date();
+        let day = weekday[d.getDay()];
+        let date = d.getDate();
+        let name = month[d.getMonth()];
+        // let year = d.getFullYear();
+        // month += 1
+        let myDate = day + ', ' + name + ' ' + date;
+        document.getElementById("myDate").innerHTML = myDate;
+
+
+        function upper_am_pm(d) { 
+            return d.getHours() < 12 ? 'AM' : 'PM';
+        }
+
+        document.getElementById('myAMPM').innerText = upper_am_pm(d);
+        document.getElementById('myAMPM_2').innerText = upper_am_pm(d);
+        document.getElementById('myAMPM_3').innerText = upper_am_pm(d);
+        document.getElementById('myAMPM_4').innerText = upper_am_pm(d);
+
+
+        function myTime() {
+            function addZero(i) {
+                if (i < 10) {i = "0" + i}
+                return i;
+            }
+
+            const d = new Date();
+            var h = addZero(d.getHours());
+            var m = addZero(d.getMinutes());
+            h = (h % 12) || 12;
+            // let s = addZero(d.getUTCSeconds());
+            let time = h + ":" + m ;
+            
+            document.getElementById("demo").innerHTML = time;
+            document.getElementById("demo-2").innerHTML = time;
+            document.getElementById("myDemo").innerHTML = time;
+            document.getElementById("myDemo-2").innerHTML = time;
+        }
+        myTime()
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0c390bb7a0.js" crossorigin="anonymous"></script>
+</body>
+</html>
